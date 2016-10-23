@@ -53,5 +53,14 @@ function determineFate(status, livingNeighbours){
 }
 
 function nextGen(current){
-  return current;
+  var next = [];
+  for (var i = 0; i < current.length; i++){
+    next[i] = [];
+    for (var j = 0; j < current[i].length; j++){
+      var livingNeighbours = getLiveNeighbours(current, i, j);
+
+      next[i][j] = determineFate(current[i][j], livingNeighbours);
+    }
+  }  
+  return next;
 }
