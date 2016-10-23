@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width">
   <title>QUnit Example</title>
   <link rel="stylesheet" href="css/qunit.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-  <script src="js/qunit.js"></script>
-  <script src="js/gol.js"></script>
+
+  <div class="controls">
+    Length: <input type="text" id="length"><br>
+    Width: <input type="text" id="width"><br>
+    <button id="generate">Generate</button>
+    <button id="start">Start</button>
+  </div>
+  <div class="board"></div>
   <script src="js/jquery.js"></script>
+  <script src="js/gol.js"></script>
+  <script src="js/golUi.js"></script>
 </body>
 </html>
