@@ -67,4 +67,14 @@ jQuery(function($){
       html.appendTo('.board');
     }, 1000);
   });
+
+  $("#help").click(function(){
+    var msg =
+      '1. Enter size of grid\n' +
+      '2. Click Generate\n' +
+      '3. Click on cells\n' +
+      '4. Start\n'+
+      'To reset, refresh page.'
+      alert(msg);
+  });
 });
