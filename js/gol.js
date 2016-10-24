@@ -1,12 +1,3 @@
-function Grid(width, height){
-  var _h = height;
-  var _w = width;
-  return {
-    getHeight: function(){ return _h; },
-    getWidth: function(){ return _w; }
-  }
-}
-
 function getStatus(grid, x, y){
   var row = grid[x];
   return row && row[y] ? row[y] : 0;
@@ -61,6 +52,6 @@ function nextGen(current){
 
       next[i][j] = determineFate(current[i][j], livingNeighbours);
     }
-  }  
+  }
   return next;
 }
