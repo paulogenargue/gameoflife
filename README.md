@@ -9,3 +9,6 @@ Attempt at game of life. Inspired from Global Code Retreat 2016 in Singapore.
 5. Click start
 
 *To reset, refresh page*
+
+## To view online
+[Click here to view online](https://jet-gambler.hyperdev.space/)
